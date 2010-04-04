@@ -1,0 +1,63 @@
+<p>
+  <b>Title:</b>
+  <%= @task.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @task.description %>
+</p>
+
+<p>
+  <b>Low estimate cache:</b>
+  <%= @task.low_estimate_cache %>
+</p>
+
+<p>
+  <b>High estimate cache:</b>
+  <%= @task.high_estimate_cache %>
+</p>
+
+<p>
+  <b>Completed:</b>
+  <%= @task.completed %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @task.user_id %>
+</p>
+
+<p>
+  <b>Due:</b>
+  <%= @task.due %>
+</p>
+
+<p>
+  <b>Start:</b>
+  <%= @task.start %>
+</p>
+
+<p>
+  <b>End:</b>
+  <%= @task.end %>
+</p>
+
+<p>
+  <b>Start in days:</b>
+  <%= @task.start_in_days %>
+</p>
+
+<p>
+  <b>End in days:</b>
+  <%= @task.end_in_days %>
+</p>
+
+<p>
+  <b>Estimate:</b>
+  <%= @task.estimate %>
+</p>
+
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>

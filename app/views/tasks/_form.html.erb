@@ -1,0 +1,55 @@
+<%= form_for(@task) do |f| %>
+  <%= f.error_messages %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :low_estimate_cache %><br />
+    <%= f.text_field :low_estimate_cache %>
+  </div>
+  <div class="field">
+    <%= f.label :high_estimate_cache %><br />
+    <%= f.text_field :high_estimate_cache %>
+  </div>
+  <div class="field">
+    <%= f.label :completed %><br />
+    <%= f.check_box :completed %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :due %><br />
+    <%= f.date_select :due %>
+  </div>
+  <div class="field">
+    <%= f.label :start %><br />
+    <%= f.datetime_select :start %>
+  </div>
+  <div class="field">
+    <%= f.label :end %><br />
+    <%= f.datetime_select :end %>
+  </div>
+  <div class="field">
+    <%= f.label :start_in_days %><br />
+    <%= f.text_field :start_in_days %>
+  </div>
+  <div class="field">
+    <%= f.label :end_in_days %><br />
+    <%= f.text_field :end_in_days %>
+  </div>
+  <div class="field">
+    <%= f.label :estimate %><br />
+    <%= f.text_field :estimate %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

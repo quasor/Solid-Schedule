@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  description: MyText
+  low_estimate_cache: 9.99
+  high_estimate_cache: 9.99
+  completed: false
+  user_id: 1
+  due: 2010-04-04
+  start: 2010-04-04 00:47:05
+  end: 2010-04-04 00:47:05
+  start_in_days: 9.99
+  end_in_days: 9.99
+  estimate: MyString
+
+two:
+  title: MyString
+  description: MyText
+  low_estimate_cache: 9.99
+  high_estimate_cache: 9.99
+  completed: false
+  user_id: 1
+  due: 2010-04-04
+  start: 2010-04-04 00:47:05
+  end: 2010-04-04 00:47:05
+  start_in_days: 9.99
+  end_in_days: 9.99
+  estimate: MyString

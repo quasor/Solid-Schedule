@@ -9,11 +9,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100404050350) do
+ActiveRecord::Schema.define(:version => 20100404074705) do
 
   create_table "releases", :force => true do |t|
     t.string   "title"
     t.date     "due"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tasks", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.decimal  "low_estimate_cache"
+    t.decimal  "high_estimate_cache"
+    t.boolean  "completed"
+    t.integer  "user_id"
+    t.date     "due"
+    t.datetime "start"
+    t.datetime "end"
+    t.decimal  "start_in_days"
+    t.decimal  "end_in_days"
+    t.string   "estimate"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,4 +1,6 @@
 Solid::Application.routes.draw do |map|
+  resources :tasks
+
   resources :releases
 
   devise_for :users
