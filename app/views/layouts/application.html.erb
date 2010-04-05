@@ -9,10 +9,6 @@
 <body>
 
 <div id="container">
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-  <p><%= link_to 'Home', root_path %></p>
-
   <% if user_signed_in? -%>
     <div id="user_login_box" style="float:right">
       <%= current_user.email %> |
@@ -20,6 +16,13 @@
       <%= link_to 'Sign out', destroy_user_session_path %>
     </div>
   <% end -%>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <p>
+		<%= link_to 'Home', root_path %> 
+		<%= link_to 'Tasks', root_path %>
+	</p>
+
   <div style="clear:both"></div>
 
   <%= yield %>

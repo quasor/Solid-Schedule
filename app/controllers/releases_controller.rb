@@ -1,4 +1,5 @@
 class ReleasesController < ApplicationController
+  before_filter :authenticate_user!
   # GET /releases
   # GET /releases.xml
   def index
